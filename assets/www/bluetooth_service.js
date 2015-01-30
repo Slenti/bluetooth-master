@@ -35,6 +35,7 @@ $(document).ready( function () {
  * Event fired when user clicks the Get some devices link.
  */
 function getDevicesEvent() {
+	alert("event");
 	getDevices(
 			function(r){
 				// The call has been successfully made.
