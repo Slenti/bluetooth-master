@@ -35,7 +35,6 @@ $(document).ready( function () {
  * Event fired when user clicks the Get some devices link.
  */
 function getDevicesEvent() {
-	alert("event");
 	getDevices(
 			function(r){
 				// The call has been successfully made.
@@ -43,7 +42,7 @@ function getDevicesEvent() {
 				$("#get-discoverable-devices").unbind('click');
 				$("#get-discoverable-devices").addClass('no_underline');
 				$("#get-discoverable-devices").removeClass('reallink');
-				//alert(r);
+				alert(r);
 			},
 			function(e){alert(e)}
 	);
